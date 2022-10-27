@@ -7,5 +7,10 @@
 
 ## Implementação
 
-1. Utilizando a abordagem da força bruta.
-2. Utilizando a abordagem de divisão e conquista.
+### Utilizando a abordagem da força bruta.
+
+Foi feita a criação da classe `ArrayWordBruteForce` para usar força bruta.
+
+### Utilizando a abordagem de divisão e conquista.
+
+Foi feita a criação da classe `ArrayWord` para usar divisão e conquista.

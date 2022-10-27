@@ -37,4 +37,30 @@ public class ArrayWordTest {
 
         assertTrue(arrayWord.FindWordInArray("CAOI".toUpperCase(), data));
     }
+
+    @Test
+    @DisplayName("Busca pela palavra Acampamento")
+    void testFindWordInArrayAcampamento() {
+        char[] data = {
+                'A', 'A', 'C', 'A', 'D', 'A', 'C', 'A', 'M', 'P', 'A', 'M', 'E', 'N', 'T', 'O', 'E', 'M', 'I', 'A',
+        };
+
+        assertTrue(arrayWord.FindWordInArray("Acampamento".toUpperCase(), data));
+        assertFalse(arrayWord.FindWordInArray("False".toUpperCase(), data));
+    }
+
+    @Test
+    @DisplayName("Busca por palavras big array")
+    void testFindWordInArrayBigArray() {
+        char[] data = {
+                'A', 'A', 'C', 'A', 'D', 'A', 'C', 'A', 'M', 'P', 'A', 'M', 'E', 'N', 'T', 'O', 'I', 'M', 'I', 'A',
+                'C', 'A', 'S', 'A', 'T', 'H', 'O', 'A', 'M', 'I', 'E', 'X', 'Ç', 'B', 'V', 'D', 'W', 'C', 'O', 'P',
+                'N', 'P', 'Y', 'O', 'D', 'P', 'B', 'R', 'A', 'S', 'I', 'L', 'W', 'P', 'O', 'L', 'X', 'V', 'P', 'Z',
+        };
+
+        assertTrue(arrayWord.FindWordInArray("Casa".toUpperCase(), data));
+        assertTrue(arrayWord.FindWordInArray("Brasil".toUpperCase(), data));
+
+        assertFalse(arrayWord.FindWordInArray("False".toUpperCase(), data));
+    }
 }
